@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix.AlanGabriel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="#" class="logo">
+            <img 
+            src="assets/imagens/Netflix-Logo-PNG-Transparent-Image.png" 
+            alt="Logo da Netflix"
+            style="position: absolute; top:10px; left: 10px; width: 60px; height: auto;"
+            >
+        </a>
+
+        <nav class="naveação" aria-label="Navegação Principal">
+            <label for="idioma" class="sr-only">
+                Selecione o idioma
+            </label>
+
+            <select id="idioma" name="idioma">
+                <option value="pt-BR">Português</option>
+                <option value="en">English</option>
+            </select>
+
+            <a href="#" class="botão-de-entrar">
+                Entrar
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-conteúdo"></div>
+                <h1>
+                    Filmes, séries e muito mais, sem limites
+                </h1>
+
+                <p class="hero-preços">
+                    A partir de R$20.99. Cancele quando quiser
+                </p>
+                
+                <p class="hero-chamada">
+                    Quer assistir? Informe o seu email para criar uma conta ou reiniciar sua assinatura
+                </p>
+
+                <form class="formulário-email">
+                    <label for="email"></label>
+
+                    <div class="campos-formulário">
+
+                        <input 
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="email"
+                            required
+                            >
+
+                        <button type="submit">
+                            Vamos lá &gt;
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="em-alta">
+            <h2>Em alta</h2>
+        </section>
+
+        <section class="motivos">
+            <h2>Mais motivos para assinar </h2>
+        </section>
+
+        <section class="faq">
+            <h2>Perguntas frequentes</h2>
+        </section>
+
+        <section class="chamada-final">
+            <p>
+                Quer assistir? Informe seu email para criar ou reiniciar a sua assinatura.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>
+            Projeto desenvolvido por Alan Godoi.
+        </p>
+    </footer>
+
+</body>
+</html>
