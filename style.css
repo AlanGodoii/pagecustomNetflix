@@ -199,3 +199,19 @@ select {
 .campos-formulario button:hover {
     background-color: #c11119;
 }
+
+@media (min-width: 768px){
+    .campos-formulario{
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .campos-formulario input {
+        max-width:500px;
+    }
+
+    .campos-formulario button{
+        align-self: stretch;
+        white-space: nowrap;
+    }
+}
