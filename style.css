@@ -1,0 +1,201 @@
+:root{
+    --cor-netflix: #e50914;
+    --cor-fundo: #000000;
+    --cor-texto: #ffffff;
+    --cir-cinza: #b3b3b3;
+    --cor-cinza-escuro: #2d2d2d;
+
+    --espaco-base: 1rem;
+    --raio-borda: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+/*esconde visualmente o label, mas continua acessivel */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/*header*/
+
+.cabecalho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 24px;
+
+    z-index: 10;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navegacao select {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--cor-texto);
+
+    border: 1px solid #777;
+    border-radius: var(--raio-borda);
+
+    padding: 6px 8px;
+}
+
+.botao-entrar {
+    background-color: var(--cor-netflix);
+    color: var(--cor-texto);
+
+    padding: 7px 14px;
+    border-radius: var(--raio-borda);
+
+    font-weight: bold;
+}
+
+.botao-entrar:hover {
+    background-color: #c11119;
+}
+
+.hero {
+    min-height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 24px 60px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0.75)
+        ),
+        url("assets/imagens/netflix-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-conteudo {
+    width: 100%;
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-preco {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-chamada {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+/*formulario*/
+.formulario-email {
+    width: 100%;
+}
+
+.campos-formulario{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.campos-formulario input {
+    width: 100%;
+    padding: 16px;
+
+    color: var(--cor-texto);
+    background-color:   rgba(0, 0, 0, 0.6);
+
+    border: 1px solid #777;
+    border-radius: var(--raio-borda);
+
+}
+
+.campos-formulario input:focus {
+    outline: 2px solid var(--cor-texto);
+}
+
+.campos-formulario button {
+    align-self: center;
+
+    border: none;
+    border-radius: var(--raio-borda);
+
+    background-color: var(--cor-netflix);
+    color: var(--cor-texto);
+
+    padding: 14px 24px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.campos-formulario button:hover {
+    background-color: #c11119;
+}
