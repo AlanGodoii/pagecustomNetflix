@@ -3,7 +3,7 @@
 **Aluno:** Alan Gabriel  
 **Matrícula:** 1135335  
 **Site de referência:** https://www.netflix.com/br/  
-**Página publicada:** [\[adicionar link do GitHub Pages](https://alangodoii.github.io/pagecustomNetflix/)
+**Página publicada:** (https://alangodoii.github.io/pagecustomNetflix/)
 
 ---
 
