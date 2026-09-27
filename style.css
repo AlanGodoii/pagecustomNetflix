@@ -242,6 +242,172 @@ select {
     transform: scale(1.05);
 }
 
+/* MAIS MOTIVOS PARA ASSINAR */
+
+.motivos {
+    padding: 40px 24px 70px;
+    background-color: var(--cor-fundo);
+}
+
+.motivos h2 {
+    margin-bottom: 24px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.lista-motivos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.motivo-card {
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px;
+
+    border-radius: 16px;
+    border: 1px solid #333;
+
+    background: linear-gradient(
+    135deg,
+    #1a1a1a,
+    #242424
+    );
+}
+
+.motivo-card h3 {
+    margin-bottom: 14px;
+    font-size: 1.3rem;
+}
+
+.motivo-card p {
+    color: var(--cor-cinza);
+    line-height: 1.5;
+}
+
+/* FAQ */
+
+.faq {
+    padding: 40px 24px 70px;
+}
+
+.faq h2 {
+    margin-bottom: 24px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.lista-faq {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 8px;
+    background-color: var(--cor-cinza-escuro);
+}
+
+.faq-item summary {
+    padding: 24px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.faq-item p {
+    padding: 20px 24px 24px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-top: 1px solid var(--cor-fundo);
+}
+
+
+/* CHAMADA FINAL */
+
+.chamada-final {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px 24px 80px;
+    text-align: center;
+    }
+
+.chamada-final p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    }
+
+
+/* SOBRE O CLONE */
+
+.sobre-clone {
+    padding: 40px 24px;
+
+    text-align: center;
+
+    border-top: 1px solid #333;
+    }
+
+.sobre-clone h2 {
+    margin-bottom: 15px;
+    }
+
+.sobre-clone p {
+    max-width: 700px;
+    margin: 8px auto;
+
+    color: var(--cor-cinza);
+    line-height: 1.5;
+    }
+
+
+/* RODAPE */
+
+.rodape {
+    padding: 60px 8%;
+
+    color: var(--cor-cinza);
+    }
+
+.rodape-duvidas {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    }
+
+.rodape-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin-bottom: 40px;
+    }
+
+.rodape-links a {
+    text-decoration: underline;
+    }
+
+.rodape-links a:hover {
+    color: var(--cor-texto);
+    }
+
+.rodape-autor {
+    font-size: 0.9rem;
+    }
+
+
 @media (min-width: 768px){
     .campos-formulario{
         flex-direction: row;
@@ -263,5 +429,25 @@ select {
 
     .em-alta{
         padding: 50px 8% 80px;
+    }
+
+    .lista-motivos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .motivos {
+        padding: 50px 8% 80px;
+    }
+
+    .faq {
+    padding: 50px 8% 80px;
+    }
+
+.rodape {
+    padding: 60px 8%;
+    }
+
+.rodape-links {
+    grid-template-columns: repeat(4, 1fr);
     }
 }
